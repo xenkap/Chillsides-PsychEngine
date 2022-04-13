@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="prompt.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="click0000" x="1" y="1" width="957" height="372"/>
+	<SubTexture name="click0001" x="1" y="1" width="957" height="372"/>
+	<SubTexture name="click0002" x="1" y="374" width="764" height="372" frameX="0" frameY="0" frameWidth="957" frameHeight="372"/>
+	<SubTexture name="click0003" x="1" y="374" width="764" height="372" frameX="0" frameY="0" frameWidth="957" frameHeight="372"/>
+</TextureAtlas>

@@ -1,0 +1,347 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				-37
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BF NOTE DOWN0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-49,
+				27
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "BF NOTE UP0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				6
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "BF NOTE LEFT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				-37
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "BF NOTE DOWN MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-49,
+				27
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "BF NOTE UP MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-62,
+				4
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "BF NOTE RIGHT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-39,
+				-29
+			],
+			"anim": "dodgeDOWN",
+			"fps": 24,
+			"name": "boyfriend dodge down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				1
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "BF HEY",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-30,
+				-4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "BF NOTE LEFT0"
+		},
+		{
+			"offsets": [
+				-52,
+				-9
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "BF NOTE RIGHT0"
+		},
+		{
+			"offsets": [
+				-4,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "scared",
+			"indices": [],
+			"name": "BF idle shaking"
+		},
+		{
+			"offsets": [
+				14,
+				12
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hurt",
+			"indices": [],
+			"name": "BF hit"
+		},
+		{
+			"offsets": [
+				-30,
+				-4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "stressLEFT",
+			"indices": [],
+			"name": "BF STRESS LEFT"
+		},
+		{
+			"offsets": [
+				-50,
+				-37
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "stressDOWN",
+			"indices": [],
+			"name": "BF STRESS DOWN"
+		},
+		{
+			"offsets": [
+				-49,
+				27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "stressUP",
+			"indices": [],
+			"name": "BF STRESS UP"
+		},
+		{
+			"offsets": [
+				-52,
+				-9
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "stressRIGHT",
+			"indices": [],
+			"name": "BF STRESS RIGHT"
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-stress",
+			"indices": [],
+			"name": "BF idle stress"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				-4
+			],
+			"anim": "stressLEFT-loop",
+			"fps": 24,
+			"name": "BF STRESS LEFT",
+			"indices": [
+				14,
+				15
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-50,
+				-37
+			],
+			"anim": "stressDOWN-loop",
+			"fps": 24,
+			"name": "BF STRESS DOWN",
+			"indices": [
+				14,
+				15,
+				16,
+				17
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-49,
+				27
+			],
+			"anim": "stressUP-loop",
+			"fps": 24,
+			"name": "BF STRESS UP",
+			"indices": [
+				14,
+				15
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-52,
+				-9
+			],
+			"anim": "stressRIGHT-loop",
+			"fps": 24,
+			"name": "BF STRESS RIGHT",
+			"indices": [
+				15,
+				16,
+				17,
+				18
+			]
+		},
+		{
+			"offsets": [
+				-4,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "scared-stress",
+			"indices": [],
+			"name": "BF stress idle shaking"
+		},
+		{
+			"offsets": [
+				-50,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey-stress",
+			"indices": [],
+			"name": "BF STRESS HEY"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-6
+			],
+			"anim": "dodgeUP",
+			"fps": 24,
+			"name": "boyfriend dodge up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				-18
+			],
+			"anim": "dodgeLEFT",
+			"fps": 24,
+			"name": "boyfriend dodge left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-73,
+				2
+			],
+			"anim": "dodgeRIGHT",
+			"fps": 24,
+			"name": "boyfriend dodge right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "BF idle dance",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-6
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "dodge",
+			"loop": false,
+			"name": "boyfriend dodge up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/cooler_bf",
+	"position": [
+		50,
+		380
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		149,
+		215,
+		195
+	],
+	"camera_position": [
+		30,
+		-20
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

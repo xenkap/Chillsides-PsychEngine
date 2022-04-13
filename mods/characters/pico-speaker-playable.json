@@ -1,0 +1,261 @@
+{
+	"animations": [
+		{
+			"loop": true,
+			"offsets": [
+				-8,
+				-20
+			],
+			"anim": "singRIGHT-loop",
+			"fps": 24,
+			"name": "Pico shoot 1",
+			"indices": [
+				23,
+				24,
+				25
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-8,
+				-20
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pico shoot 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-8,
+				-147
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Pico shoot 2",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-8,
+				-147
+			],
+			"anim": "singDOWN-loop",
+			"fps": 24,
+			"name": "Pico shoot 2",
+			"indices": [
+				57,
+				58,
+				59
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				353,
+				-93
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Pico shoot 3",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				353,
+				-93
+			],
+			"anim": "singLEFT-loop",
+			"fps": 24,
+			"name": "Pico shoot 3",
+			"indices": [
+				50,
+				51,
+				52
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				416,
+				-39
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Pico shoot 4",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				416,
+				-39
+			],
+			"anim": "singUP-loop",
+			"fps": 24,
+			"name": "Pico shoot 4",
+			"indices": [
+				50,
+				51,
+				52
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-8,
+				-20
+			],
+			"anim": "idle-right-loop",
+			"fps": 24,
+			"name": "Pico shoot 1",
+			"indices": [
+				23,
+				24,
+				25
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-8,
+				-20
+			],
+			"anim": "idle-right",
+			"fps": 24,
+			"name": "Pico shoot 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-8,
+				-147
+			],
+			"anim": "idle-down",
+			"fps": 24,
+			"name": "Pico shoot 2",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-8,
+				-147
+			],
+			"anim": "idle-down-loop",
+			"fps": 24,
+			"name": "Pico shoot 2",
+			"indices": [
+				57,
+				58,
+				59
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				353,
+				-93
+			],
+			"anim": "idle-left",
+			"fps": 24,
+			"name": "Pico shoot 3",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				353,
+				-93
+			],
+			"anim": "idle-left-loop",
+			"fps": 24,
+			"name": "Pico shoot 3",
+			"indices": [
+				50,
+				51,
+				52
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				416,
+				-39
+			],
+			"anim": "idle-up",
+			"fps": 24,
+			"name": "Pico shoot 4",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				416,
+				-39
+			],
+			"anim": "idle-up-loop",
+			"fps": 24,
+			"name": "Pico shoot 4",
+			"indices": [
+				50,
+				51,
+				52
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-8,
+				-20
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Pico shoot 1",
+			"indices": [
+				23,
+				24,
+				25
+			]
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-8,
+				-20
+			],
+			"anim": "idle-loop",
+			"fps": 24,
+			"name": "Pico shoot 1",
+			"indices": [
+				23,
+				24,
+				25
+			]
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/CHPicoSpeaker",
+	"position": [
+		-220,
+		-185
+	],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [
+		183,
+		216,
+		85
+	],
+	"camera_position": [
+		200,
+		100
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

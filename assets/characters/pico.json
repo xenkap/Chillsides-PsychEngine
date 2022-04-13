@@ -1,0 +1,111 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "Pico Idle Dance",
+			"indices": []
+		},
+		{
+			"offsets": [
+				48,
+				18
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Pico Note Right0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-42,
+				-11
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pico NOTE LEFT0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				11,
+				63
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "pico Up note0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				10,
+				-37
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Pico Down Note0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				31,
+				43
+			],
+			"anim": "shoot",
+			"fps": 24,
+			"name": "Pico SHOOT",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				33,
+				43
+			],
+			"anim": "shootSHORT",
+			"fps": 24,
+			"name": "Pico SHORT SHOOT",
+			"indices": []
+		},
+		{
+			"offsets": [
+				100,
+				56
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "shootLEFT",
+			"loop": false,
+			"name": "Pico 2 SHORT SHOOT"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Pico_FNF_assetss",
+	"position": [
+		40,
+		300
+	],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [
+		20,
+		155,
+		95
+	],
+	"camera_position": [
+		-290,
+		-20
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

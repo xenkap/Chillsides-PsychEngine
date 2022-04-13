@@ -1,0 +1,74 @@
+{
+	"song": {
+		"speed": 2.3,
+		"stage": null,
+		"player1": "bf",
+		"player2": "pico",
+		"player3": null,
+		"events": [
+			[
+				46542.8571428572,
+				[
+					[
+						"Play Animation",
+						"singDOWNmiss",
+						"BF"
+					],
+					[
+						"Add Camera Zoom",
+						"0.156",
+						""
+					]
+				]
+			],
+			[
+				47228.5714285714,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				48000,
+				[
+					[
+						"Add Camera Zoom",
+						"",
+						""
+					]
+				]
+			],
+			[
+				95999.9999999999,
+				[
+					[
+						"Play Animation",
+						"scared",
+						"BF"
+					]
+				]
+			],
+			[
+				96514.2857142856,
+				[
+					[
+						"Hey!",
+						"ae",
+						""
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 175,
+		"arrowSkin": null,
+		"needsVoices": false,
+		"song": "Philly Nice"
+	}
+}

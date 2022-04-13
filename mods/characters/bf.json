@@ -1,0 +1,243 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-22,
+				-49
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "BF NOTE DOWN0"
+		},
+		{
+			"offsets": [
+				-35,
+				18
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "BF NOTE UP0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-32,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BF NOTE LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-29,
+				-4
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "BF NOTE RIGHT0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-5,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "BF idle dance"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-4,
+				4
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "BF HEY",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-7,
+				0
+			],
+			"anim": "scared",
+			"fps": 24,
+			"name": "BF idle shaking",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-32,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "stressLEFT",
+			"indices": [],
+			"name": "BF STRESS LEFT0"
+		},
+		{
+			"offsets": [
+				-22,
+				-49
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "stressDOWN",
+			"indices": [],
+			"name": "BF STRESS DOWN0"
+		},
+		{
+			"offsets": [
+				-35,
+				18
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "stressUP",
+			"indices": [],
+			"name": "BF STRESS UP0"
+		},
+		{
+			"offsets": [
+				-20,
+				-10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "stressRIGHT",
+			"indices": [],
+			"name": "BF STRESS RIGHT0"
+		},
+		{
+			"offsets": [
+				-4,
+				4
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "ey",
+			"indices": [],
+			"name": "BF EY"
+		},
+		{
+			"offsets": [
+				-7,
+				0
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "terrified",
+			"indices": [],
+			"name": "BF idle stressing"
+		},
+		{
+			"offsets": [
+				60,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft-flex",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			],
+			"name": "BF idle flex"
+		},
+		{
+			"offsets": [
+				60,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight-flex",
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31
+			],
+			"name": "BF idle flex"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-6,
+				0
+			],
+			"anim": "idle-stress",
+			"fps": 24,
+			"name": "BF idle stress0",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-7,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "shiver",
+			"loop": false,
+			"name": "BF idle shaking"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/realBF",
+	"position": [
+		50,
+		380
+	],
+	"healthicon": "bf",
+	"flip_x": true,
+	"healthbar_colors": [
+		149,
+		215,
+		195
+	],
+	"camera_position": [
+		30,
+		-20
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

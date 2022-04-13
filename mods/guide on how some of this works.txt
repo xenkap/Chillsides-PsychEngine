@@ -1,0 +1,33 @@
+How To Access it:
+have the mod enabled/have script and assets in mods folder
+open chart editor, go to events and do activate extra keys, type in key amount and place event (you can also add a script that runs the event on create post)
+
+Charting:
+now this is one annoying limitation of using lua for this, you have to use note types to place the extra colors, the note type called extras
+will place the other colored directions, and the space note type will place the space note, it doesnt matter which direction you place on, use the charter zoom to place
+duplicate directions
+
+Controls:
+you can change these at the top of the extra keys script, it goes in order of keys from 0-9
+
+
+Some Notes about how it works:
+So with the way extra keys are added, it creates an entirely new set of strums, seperate from the original 4k ones,
+you switch between them with the activate/disable extra keys events
+
+This new set of strums are accessed differently, theres no playerstrums or oppenentstrums you have to access with get/setpropertyFromGroup
+they are now just lua sprites, the name of the sprites are the numbers 0-17, all strums should be available at all times due to mania changes
+the 0-8 are the oppenent strums, 9-17 are player strums, note that if you are using 6k or 7k, the in game strums are ordered differently, imagine if
+all the strums are 9k at once, but the other strums that are not used for that key amount are hidden, because thats how it works, it still uses the same ordering
+as 9k, just useful to know if you try to do modchart stuff with arrows
+
+Another thing to note, goodnotehit function on other scripts will NOT work, because i had to rewrite everything for the input, and i dont think its possible to
+directly call a function on all scripts (i dont know psych that well maybe you can??????), so any note types you add, you have to add its goodnotehit code into
+the extra keys script
+
+On the topic of note types, to get them to work on the extra notes, you have to make a duplicate note type with either "extra" or "space" in the name,
+theres not much i cant do about it lol
+
+theres currently no notesplashes or rating/combo popups when using extra keys, though i may be able to add these in the future (plz make these available though lua shadow mario)
+
+also if youre on latest build from github copyX is disabled cuz of note directions so idk if notes might sometimes glitch out idk lol

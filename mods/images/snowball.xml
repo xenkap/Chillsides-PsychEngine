@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="snowball.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="blue0000" x="1" y="1" width="168" height="167"/>
+	<SubTexture name="green0000" x="170" y="1" width="168" height="167"/>
+	<SubTexture name="purple0000" x="339" y="1" width="168" height="167"/>
+	<SubTexture name="red0000" x="1" y="169" width="168" height="167"/>
+</TextureAtlas>
