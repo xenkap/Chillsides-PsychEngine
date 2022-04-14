@@ -1,8 +1,5 @@
-local allowCountdown = false
 function onCreate()
 	if not seenCutscene then
-		precacheImage('characters/OG-BOYFRIEND')
-		precacheImage('characters/FOXBOI')
 		makeLuaSprite('charSelect', 'selection', -35, 0)
 		scaleObject('charSelect', 0.685, 0.685)
 		addLuaSprite('charSelect', true)
@@ -26,7 +23,8 @@ function onStartCountdown()
 	return Function_Continue;
 end
 
-local curChar = 0
+local leftWait = 0
+local rightWait = 0
 function onUpdate()
 	if allowCountdown and not seenCutscene then
 		if keyJustPressed('accept') then
@@ -36,41 +34,41 @@ function onUpdate()
 			runTimer('flash', 0.6)
 			playSound('confirmMenu', 1)
 		end
-		if keyJustPressed('left') or keyJustPressed('right') then
+		if keyJustPressed('left') then
+			if leftWait == 0 then
+				runTimer('left', 0.5)
+			end
+			leftWait = 1
+			changeChar(-1)
 			playSound('scrollMenu', 4)
-			if keyJustPressed('left') then
-				if curChar == 0 then
-					curChar = 2
-				else
-					curChar = curChar - 1
-				end
-			else
-				if curChar == 2 then
-					curChar = 0
-				else
-					curChar = curChar + 1
-				end
+		elseif keyJustPressed('right') then
+			if rightWait == 0 then
+				runTimer('right', 0.5)
 			end
-			if curChar == 0 then
-				makeAnimatedLuaSprite('char', 'characters/realBF', 403, 153)
-				triggerEvent('Change Character', 'bf', 'bf')
-			elseif curChar == 1 then
-				makeAnimatedLuaSprite('char', 'characters/OG-BOYFRIEND', 403, 160)
-				triggerEvent('Change Character', 'bf', 'og-bf')
-			else
-				makeAnimatedLuaSprite('char', 'characters/FOXBOI', 403, 160)
-				triggerEvent('Change Character', 'bf', 'foxboi')
-			end
-			addAnimationByPrefix('char', 'idle', 'BF idle dance', 24, true)
-			addAnimationByPrefix('char', 'hey', 'BF HEY!!', 24, false)
-			addLuaSprite('char', true)
-			setScrollFactor('char', 0, 0)
-			setObjectCamera('char', 'other')
+			changeChar(1)
+			playSound('scrollMenu', 4)
 		end
 	end
 end
 
-function onTimerCompleted(tag)
+function onTimerCompleted(tag, loops, loopsLeft)
+	if allowCountdown and not seenCutscene then
+		if tag == 'left' then
+			if keyPressed('left') then
+				leftWait = 0
+				changeChar(-1)
+				runTimer('left', 0.08)
+				playSound('scrollMenu', 4)
+			end
+		elseif tag == 'right' then
+			if keyPressed('right') then
+				rightWait = 0
+				changeChar(1)
+				runTimer('right', 0.08)
+				playSound('scrollMenu', 4)
+			end
+		end
+	end
 	if tag == 'countdown' then
 		stopSound('lunchbox')
 		allowCountdown = true
@@ -79,9 +77,30 @@ function onTimerCompleted(tag)
 		removeLuaSprite('charSelect', true)
 		removeLuaSprite('char', true)
 		cameraFlash('other', '000000', 0.5, true)
-	end
-	if tag == 'flash' then
+	elseif tag == 'flash' then
 		soundFadeOut('lunchbox', 0.125, 0)
 		cameraFlash('other', 'FFFFFF', 100000, true)
 	end
+end
+
+local curChar = 0
+function changeChar(inc)
+	curChar = curChar + inc
+	if curChar > 1 then
+		curChar = 0
+	elseif curChar < 0 then
+		curChar = 1
+	end
+	if curChar == 0 then
+		makeAnimatedLuaSprite('char', 'characters/realBF', 403, 153)
+		triggerEvent('Change Character', 'bf', 'bf')
+	elseif curChar == 1 then
+		makeAnimatedLuaSprite('char', 'characters/OG-BOYFRIEND', 403, 153)
+		triggerEvent('Change Character', 'bf', 'og-bf')
+	end
+	addAnimationByPrefix('char', 'idle', 'BF idle dance', 24, true)
+	addAnimationByPrefix('char', 'hey', 'BF HEY!!', 24, false)
+	addLuaSprite('char', true)
+	setScrollFactor('char', 0, 0)
+	setObjectCamera('char', 'other')
 end

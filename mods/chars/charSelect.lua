@@ -52,24 +52,21 @@ function onUpdate()
 end
 
 function onTimerCompleted(tag, loops, loopsLeft)
-	if allowCountdown and not seenCutscene then
-		if tag == 'left' then
-			if keyPressed('left') then
-				leftWait = 0
-				changeChar(-1)
-				runTimer('left', 0.08)
-				playSound('scrollMenu', 4)
-			end
-		elseif tag == 'right' then
-			if keyPressed('right') then
-				rightWait = 0
-				changeChar(1)
-				runTimer('right', 0.08)
-				playSound('scrollMenu', 4)
-			end
+	if tag == 'left' then
+		if keyPressed('left') then
+			leftWait = 0
+			changeChar(-1)
+			runTimer('left', 0.08)
+			playSound('scrollMenu', 4)
 		end
-	end
-	if tag == 'countdown' then
+	elseif tag == 'right' then
+		if keyPressed('right') then
+			rightWait = 0
+			changeChar(1)
+			runTimer('right', 0.08)
+			playSound('scrollMenu', 4)
+		end
+	elseif tag == 'countdown' then
 		stopSound('lunchbox')
 		allowCountdown = true
 		startCountdown();

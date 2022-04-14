@@ -1,3 +1,4 @@
+local allowCountdown = false
 function onCreate()
 	if not seenCutscene then
 		makeLuaSprite('charSelect', 'selection', -35, 0)
@@ -5,13 +6,14 @@ function onCreate()
 		addLuaSprite('charSelect', true)
 		setScrollFactor('charSelect', 0, 0)
 		setObjectCamera('charSelect', 'other')
-		makeAnimatedLuaSprite('char', 'characters/realBF', 403, 153)
-		addAnimationByPrefix('char', 'idle', 'BF idle dance', 24, true)
-		addAnimationByPrefix('char', 'hey', 'BF HEY!!', 24, false)
+		makeAnimatedLuaSprite('char', 'characters/bfPixel', 383, 83)
+		setProperty('char.antialiasing', false);
+		scaleObject('char', 7, 7);
+		addAnimationByPrefix('char', 'idle', 'BF IDLE', 24, true)
+		addAnimationByPrefix('char', 'hey', 'BF RIGHT NOTE', 24, false)
 		addLuaSprite('char', true)
 		setScrollFactor('char', 0, 0)
 		setObjectCamera('char', 'other')
-		playMusic('lunchbox', 1, true)
 	end
 end
 
@@ -52,25 +54,21 @@ function onUpdate()
 end
 
 function onTimerCompleted(tag, loops, loopsLeft)
-	if allowCountdown and not seenCutscene then
-		if tag == 'left' then
-			if keyPressed('left') then
-				leftWait = 0
-				changeChar(-1)
-				runTimer('left', 0.08)
-				playSound('scrollMenu', 4)
-			end
-		elseif tag == 'right' then
-			if keyPressed('right') then
-				rightWait = 0
-				changeChar(1)
-				runTimer('right', 0.08)
-				playSound('scrollMenu', 4)
-			end
+	if tag == 'left' then
+		if keyPressed('left') then
+			leftWait = 0
+			changeChar(-1)
+			runTimer('left', 0.08)
+			playSound('scrollMenu', 4)
 		end
-	end
-	if tag == 'countdown' then
-		stopSound('lunchbox')
+	elseif tag == 'right' then
+		if keyPressed('right') then
+			rightWait = 0
+			changeChar(1)
+			runTimer('right', 0.08)
+			playSound('scrollMenu', 4)
+		end
+	elseif tag == 'countdown' then
 		allowCountdown = true
 		startCountdown();
 		allowCountdown = false
@@ -78,7 +76,6 @@ function onTimerCompleted(tag, loops, loopsLeft)
 		removeLuaSprite('char', true)
 		cameraFlash('other', '000000', 0.5, true)
 	elseif tag == 'flash' then
-		soundFadeOut('lunchbox', 0.125, 0)
 		cameraFlash('other', 'FFFFFF', 100000, true)
 	end
 end
@@ -92,14 +89,16 @@ function changeChar(inc)
 		curChar = 1
 	end
 	if curChar == 0 then
-		makeAnimatedLuaSprite('char', 'characters/realBF', 403, 153)
-		triggerEvent('Change Character', 'bf', 'bf')
+		makeAnimatedLuaSprite('char', 'characters/bfPixel', 383, 83)
+		triggerEvent('Change Character', 'bf', 'bf-pixel')
 	elseif curChar == 1 then
-		makeAnimatedLuaSprite('char', 'characters/OG-BOYFRIEND', 403, 153)
-		triggerEvent('Change Character', 'bf', 'og-bf')
+		makeAnimatedLuaSprite('char', 'characters/OG-bfPixel', 383, 83)
+		triggerEvent('Change Character', 'bf', 'og-bfpixel')
 	end
-	addAnimationByPrefix('char', 'idle', 'BF idle dance', 24, true)
-	addAnimationByPrefix('char', 'hey', 'BF HEY!!', 24, false)
+	setProperty('char.antialiasing', false);
+	scaleObject('char', 7, 7);
+	addAnimationByPrefix('char', 'idle', 'BF IDLE', 24, true)
+	addAnimationByPrefix('char', 'hey', 'BF RIGHT NOTE', 24, false)
 	addLuaSprite('char', true)
 	setScrollFactor('char', 0, 0)
 	setObjectCamera('char', 'other')
