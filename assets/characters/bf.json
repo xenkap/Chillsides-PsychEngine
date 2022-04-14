@@ -3,8 +3,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-20,
-				-52
+				-22,
+				-49
 			],
 			"anim": "singDOWN",
 			"fps": 24,
@@ -15,7 +15,7 @@
 			"loop": false,
 			"offsets": [
 				-35,
-				18
+				25
 			],
 			"anim": "singUP",
 			"fps": 24,
@@ -24,8 +24,8 @@
 		},
 		{
 			"offsets": [
-				-32,
-				0
+				18,
+				1
 			],
 			"loop": false,
 			"fps": 24,
@@ -35,7 +35,7 @@
 		},
 		{
 			"offsets": [
-				-19,
+				-29,
 				-4
 			],
 			"loop": false,
@@ -68,7 +68,7 @@
 		},
 		{
 			"offsets": [
-				-5,
+				-7,
 				0
 			],
 			"loop": true,
@@ -76,10 +76,153 @@
 			"anim": "scared",
 			"indices": [],
 			"name": "BF idle shaking"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-32,
+				0
+			],
+			"anim": "stressLEFT",
+			"fps": 24,
+			"name": "BF STRESS LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-22,
+				-49
+			],
+			"anim": "stressDOWN",
+			"fps": 24,
+			"name": "BF STRESS DOWN0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-35,
+				18
+			],
+			"anim": "stressUP",
+			"fps": 24,
+			"name": "BF STRESS UP0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				-10
+			],
+			"anim": "stressRIGHT",
+			"fps": 24,
+			"name": "BF STRESS RIGHT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-4,
+				4
+			],
+			"anim": "ey",
+			"fps": 24,
+			"name": "BF EY",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-7,
+				0
+			],
+			"anim": "terrified",
+			"fps": 24,
+			"name": "BF idle stressing",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				60,
+				0
+			],
+			"anim": "danceLeft-flex",
+			"fps": 24,
+			"name": "BF idle flex",
+			"indices": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13
+			]
+		},
+		{
+			"loop": false,
+			"offsets": [
+				60,
+				0
+			],
+			"anim": "danceRight-flex",
+			"fps": 24,
+			"name": "BF idle flex",
+			"indices": [
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31
+			]
+		},
+		{
+			"offsets": [
+				-6,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-stress",
+			"indices": [],
+			"name": "BF idle stress0"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-7,
+				0
+			],
+			"anim": "shiver",
+			"fps": 24,
+			"name": "BF idle shaking",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/realBF",
+	"image": "characters/BOYFRIEND",
 	"position": [
 		50,
 		380

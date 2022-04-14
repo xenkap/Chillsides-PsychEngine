@@ -5,7 +5,7 @@ function onCreate()
 		addLuaSprite('charSelect', true)
 		setScrollFactor('charSelect', 0, 0)
 		setObjectCamera('charSelect', 'other')
-		makeAnimatedLuaSprite('char', 'characters/realBF', 403, 153)
+		makeAnimatedLuaSprite('char', 'characters/BOYFRIEND', 403, 153)
 		addAnimationByPrefix('char', 'idle', 'BF idle dance', 24, true)
 		addAnimationByPrefix('char', 'hey', 'BF HEY!!', 24, false)
 		addLuaSprite('char', true)
@@ -92,7 +92,7 @@ function changeChar(inc)
 		curChar = 1
 	end
 	if curChar == 0 then
-		makeAnimatedLuaSprite('char', 'characters/realBF', 403, 153)
+		makeAnimatedLuaSprite('char', 'characters/BOYFRIEND', 403, 153)
 		triggerEvent('Change Character', 'bf', 'bf')
 	elseif curChar == 1 then
 		makeAnimatedLuaSprite('char', 'characters/OG-BOYFRIEND', 403, 153)
