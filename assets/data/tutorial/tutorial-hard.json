@@ -1813,8 +1813,8 @@
 				"mustHitSection": true
 			}
 		],
-		"player2": "bf",
-		"gfVersion": "bf",
+		"player2": "gf-arrows",
+		"gfVersion": "gf-arrows",
 		"events": [],
 		"player3": null,
 		"song": "Tutorial",
