@@ -1,0 +1,39 @@
+{
+	"song": {
+		"speed": 1.6,
+		"stage": null,
+		"player1": "bf",
+		"player2": "gf_tutorial",
+		"player3": null,
+		"events": [
+			[
+				83428.5714285714,
+				[
+					[
+						"LinearAlphaHud",
+						"5",
+						"0"
+					]
+				]
+			],
+			[
+				100571.428571429,
+				[
+					[
+						"Fade",
+						"0.5",
+						"000000"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf_tutorial",
+		"bpm": 105,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Tutorial"
+	}
+}
