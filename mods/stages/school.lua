@@ -1,6 +1,6 @@
 local allowCountdown = false
 function onCreate()
-	if not seenCutscene then
+	if not seenCutscene and not isStoryMode then
 		makeLuaSprite('charSelect', 'selection', -35, 0)
 		scaleObject('charSelect', 0.685, 0.685)
 		addLuaSprite('charSelect', true)
@@ -18,7 +18,7 @@ function onCreate()
 end
 
 function onStartCountdown()
-	if not allowCountdown and not seenCutscene then --Block the first countdown
+	if not allowCountdown and not seenCutscene and not isStoryMode then --Block the first countdown
 		allowCountdown = true;
 		return Function_Stop;
 	end
@@ -28,7 +28,7 @@ end
 local leftWait = 0
 local rightWait = 0
 function onUpdate()
-	if allowCountdown and not seenCutscene then
+	if allowCountdown and not seenCutscene and not isStoryMode then
 		if keyJustPressed('accept') then
 			objectPlayAnimation('char', 'hey', false)
 			allowCountdown = false
@@ -54,7 +54,7 @@ function onUpdate()
 end
 
 function onTimerCompleted(tag, loops, loopsLeft)
-	if allowCountdown and not seenCutscene then
+	if allowCountdown and not seenCutscene and not isStoryMode then
 		if tag == 'left' then
 			if keyPressed('left') then
 				leftWait = 0

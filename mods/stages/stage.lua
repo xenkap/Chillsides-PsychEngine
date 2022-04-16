@@ -15,10 +15,13 @@ function onCreate()
 	end
 end
 
+local disableChar = false
 function onStartCountdown()
 	if not allowCountdown and not seenCutscene then --Block the first countdown
 		allowCountdown = true;
-		return Function_Stop;
+		if not disableChar then
+			return Function_Stop;
+		end
 	end
 	return Function_Continue;
 end
@@ -26,7 +29,7 @@ end
 local leftWait = 0
 local rightWait = 0
 function onUpdate()
-	if allowCountdown and not seenCutscene then
+	if allowCountdown and not seenCutscene and not disableChar then
 		if keyJustPressed('accept') then
 			objectPlayAnimation('char', 'hey', false)
 			allowCountdown = false
@@ -71,9 +74,8 @@ function onTimerCompleted(tag, loops, loopsLeft)
 	end
 	if tag == 'countdown' then
 		stopSound('lunchbox')
-		allowCountdown = true
-		startCountdown();
-		allowCountdown = false
+		disableChar = true
+		startDialogue('dialogue', 'breakfast');
 		removeLuaSprite('charSelect', true)
 		removeLuaSprite('char', true)
 		cameraFlash('other', '000000', 0.5, true)
