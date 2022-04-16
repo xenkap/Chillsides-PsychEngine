@@ -1,0 +1,2 @@
+Center the camera for dramatic effect
+Value 1: Leave empty to reset, else toggle on
